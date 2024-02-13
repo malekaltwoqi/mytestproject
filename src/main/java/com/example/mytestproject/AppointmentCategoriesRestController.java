@@ -5,11 +5,13 @@ import  org.springframework.web.bind.annotation.*;
 @CrossOrigin(origins = "*")
 
 public class AppointmentCategoriesRestController {
+    UsersDatabaseConnection connection;
     public AppointmentCategoriesRestController(){
 
     }
     @GetMapping("/appointment-categories")
     public void getAppointmentCategories(@PathVariable long doctorId){
+        connection.getUser();
 
     }
 }
