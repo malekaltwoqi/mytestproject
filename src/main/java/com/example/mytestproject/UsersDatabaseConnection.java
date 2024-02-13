@@ -13,6 +13,10 @@ public class UsersDatabaseConnection {
     public void updateUser(){
         System.out.println("updateUser ");
     }
+
+    public void registerUser() {
+        System.out.println("registerUser ");
+    }
     public void deleteUser(){
         System.out.println("deleteUser ");
     }
